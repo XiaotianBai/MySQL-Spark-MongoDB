@@ -1,0 +1,20 @@
+Netid:xb306
+
+Dataset(file):
+gdp-1950-1983.csv
+
+Results:
+First plot using raw gdp data, second plot using scaled gdp data.
+
+Procedures:
+Execute:
+	Rscript /home/2018/spring/nyu/6513/xb306/T1/d1/d1-r.R
+on IBM Cloud. 
+Two png files 
+	xb306_plot1.png and xb306_plot2.png
+will be created in your current directory along with the Rplots.pdf file(in case the pdf file has collisions with other plots):
+	
+You can also see the plots in my directory
+	/home/2018/spring/nyu/6513/xb306
+
+The ggplot2 package is needed(already installed on IBM cloud)

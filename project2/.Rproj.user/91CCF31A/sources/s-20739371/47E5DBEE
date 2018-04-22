@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1521823738776.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "47E5DBEE",
+    "lastKnownWriteTime" : 1521837724,
+    "last_content_update" : 1521837724998,
+    "path" : "E:/Classes/BigData/midterm/midterm_1/d1-r.R",
+    "project_path" : "d1-r.R",
+    "properties" : {
+        "cursorPosition" : "8,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

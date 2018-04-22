@@ -1,0 +1,34 @@
+Netid:xb306
+
+Datasets:
+/home/data/MT/dataset2/ndq1/hayn.us.txt
+/home/data/MT/dataset2/ndq1/elgx.us.txt
+/home/data/MT/dataset2/ndq1/amed.us.txt
+
+Result1(hayn):
++------------+----------------+
+| Date       | ChangePct_hayn |
++------------+----------------+
+| 2005-11-14 | 45.13%         |
++------------+----------------+
+
+Result2(elgx):
++------------+----------------+
+| Date       | ChangePct_elgx |
++------------+----------------+
+| 2009-01-06 | 21.64%         |
++------------+----------------+
+
+
+Result3(amed):
++------------+----------------+
+| Date       | ChangePct_amed |
++------------+----------------+
+| 2014-06-27 | 20.41%         |
++------------+----------------+
+
+
+Procedures:
+In terminal after log into mysql on IBM cloud, excute:
+	source /home/2018/spring/nyu/6513/xb306/T1/d2/d2-sql.sql
+The results will be displayed sequentially.

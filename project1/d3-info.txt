@@ -1,0 +1,46 @@
+Netid:xb306
+
+Dataset:
+/home/data/MT/dataset3/d09.csv
+
+Some of the results:
+
+Count the numbers of different races
+{ "_id" : "White", "Count" : 16973 }
+{ "_id" : "Information not provided by applicant in mail, Internet, or telephone application", "Count" : 2477 }
+{ "_id" : "Not applicable", "Count" : 1901 }
+{ "_id" : "Asian", "Count" : 1250 }
+{ "_id" : "Black or African American", "Count" : 1184 }
+{ "_id" : "American Indian or Alaska Native", "Count" : 132 }
+{ "_id" : "Native Hawaiian or Other Pacific Islander", "Count" : 83 }
+
+Find the counts and proportions of ethnicity
+{ "_id" : { "Race" : "White" }, "Count" : 16973, "Percentage" : 70.72083333333333 }
+{ "_id" : { "Race" : "Information not provided by applicant in mail, Internet, or telephone application" }, "Count" : 2477, "Percentage" : 10.320833333333333 }
+{ "_id" : { "Race" : "Not applicable" }, "Count" : 1901, "Percentage" : 7.920833333333333 }
+{ "_id" : { "Race" : "Asian" }, "Count" : 1250, "Percentage" : 5.208333333333333 }
+{ "_id" : { "Race" : "Black or African American" }, "Count" : 1184, "Percentage" : 4.933333333333334 }
+{ "_id" : { "Race" : "American Indian or Alaska Native" }, "Count" : 132, "Percentage" : 0.55 }
+{ "_id" : { "Race" : "Native Hawaiian or Other Pacific Islander" }, "Count" : 83, "Percentage" : 0.3458333333333333 }
+
+Find the numbers of home purchaser in California
+{ "_id" : "Home purchaser", "Count" : 721 }
+
+Find the number of white female with manufactured housing dwelling in Texas
+{ "_id" : "White female with manufactured housing", "Count" : 26 }
+
+Find the most popular loan type and purpose
+{ "_id" : { "MostPopularType" : "Conventional" }, "Count" : 18425, "Percentage" : 76.77083333333333 }
+{ "_id" : { "MostPopularPurpose" : "Refinancing" }, "Count" : 13914, "Percentage" : 57.975 }
+
+
+
+Procedures:
+In IBM cloud terminal, execute: 
+	Rscript /home/2018/spring/nyu/6513/xb306/T1/d3/d3-r.R
+This will create file
+	/home/2018/spring/nyu/6513/xb306/T1/d3/features.csv
+Then import features.csv into mongodb in terminal(already done):
+	mongoimport -d xb306 -c t3 --type csv --file /home/2018/spring/nyu/6513/xb306/T1/d3/features.csv  --headerline;
+Then in terminal, run mongo shell script by:
+	mongo < /home/2018/spring/nyu/6513/xb306/T1/d3/d3-mongo.ql

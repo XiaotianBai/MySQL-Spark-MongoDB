@@ -1,0 +1,45 @@
+Netid:xb306
+
+Datasets:
+"Hazardous Air Pollutants : A summary of daily Hazardous Air Pollutants from 1990 to 2017" from US Environmental Protection Agency
+
+CSV file location:
+/home/2018/spring/nyu/6513/xb306/HW1/epa_hap_daily_summary.csv
+CSV file size:
+2.29GB
+
+Research objects:
+Air pollution(especially the concentrations of PM2.5 pollutants) in US and New York
+
+Research methods:
+MySQL+R; Use MySQL to store and query specified data, then use R to process the data and plot.
+
+
+Plots & Conclusions:
+Timespan of New York's records of PM2.5 pollutants is 2000-2016.
+
+1.Average Concentration of Various PM2.5 Pollutants in NYC (2000-2016)
+Conclusion:The amount of PM2.5 pollutants have been gradually decreasing in New York over the years.
+
+2.Average Concentration of Various PM2.5 Pollutants in US (1990-2017)
+Conclusion:Countrywide, the amount of PM2.5 pollutants keep floating and remain the same level from 1990.
+
+3.Overall Concentration of PM2.5 Pollutants in US vs NYC (2000-2016)
+Conclusion:Although the amount PM2.5 pollutants in New York have been decreasing, it is still significantly larger than countrywide average, which means air pollution is still relatively severe in New York than in most other cities in US. However, the situation are getting better.
+
+4.Piechart: Proportion of PM2.5 Pollutants in New York in 2016
+Conclusion:Nearly half of the PM2.5 pollutants are Lead PM2.5 LC. Exposure to polluted air may cause lead poisoning.
+
+
+Procedures:
+1.Log in to mariaDB on IBM cloud. In terminal execute sql file:
+	source /home/2018/spring/nyu/6513/xb306/HW1/hw1-sql.sql
+This will create a table named pollutants in database xb306 and import all the data in the CSV file.
+As an alternative.
+2.In terminal execute
+	Rscript /home/2018/spring/nyu/6513/xb306/HW1/hw1-r.R
+This will run all the queries and output 4 plots:
+	HW1_plot1_xb306.png, HW1_plot2_xb306.png, 
+	HW1_plot3_xb306.png, HW1_plot4_xb306.png
+These plots will be saved in the current directory. I have also uploaded the plots in 
+	/home/2018/spring/nyu/6513/xb306/HW1/plots/

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1521846421774.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "269D88A2",
+    "lastKnownWriteTime" : 1521917045,
+    "last_content_update" : 1521917045116,
+    "path" : "E:/Classes/BigData/midterm/midterm_1/d3-r.R",
+    "project_path" : "d3-r.R",
+    "properties" : {
+        "cursorPosition" : "3,69",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

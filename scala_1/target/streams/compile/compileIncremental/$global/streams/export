@@ -1,0 +1,1 @@
+scalac -bootclasspath C:\Users\BXT\.sbt\boot\scala-2.12.4\lib\scala-library.jar -classpath E:\Classes\BigData\Scala_1\target\scala-2.12\classes E:\Classes\BigData\Scala_1\src\main\scala\ExampleApp.scala
