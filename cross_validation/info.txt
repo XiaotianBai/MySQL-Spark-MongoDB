@@ -1,0 +1,52 @@
+Name: Xiaotian Bai
+NetID: xb306
+
+Instructions:
+Under: 
+	/home/2018/spring/nyu/6513/xb306/tmp/Finals/P3
+Run: 
+	chmod +x run.sh
+	./run.sh
+
+It will run 3,5,10 fold CV and LOOCV sequentially (LOOCV takes a lot of time)
+For 3,5,10 fold CV I used randomsplit() to split the RDD.
+For LOOCV I manually singled out each row using filter.
+
+
+
+Results:
+********** 3-fold CV **********
+Precision=  0.7412140575079872
+Accuracy=  0.7856341189674523
+AUC=  0.7671593692555229
+tpr=  0.6783625730994152
+fnr=  0.3216374269005848
+fpr=  0.14754098360655737
+tnr=  0.8524590163934426
+
+********** 5-fold CV **********
+Precision=  0.760655737704918
+Accuracy=  0.7946127946127947
+AUC=  0.7760918559153853
+tpr=  0.6783625730994152
+fnr=  0.3216374269005848
+fpr=  0.13296903460837886
+tnr=  0.8670309653916212
+
+********** 10-fold CV **********
+Precision=  0.7829181494661922
+Accuracy=  0.7946127946127947
+AUC=  0.7690684622749252
+tpr=  0.6432748538011696
+fnr=  0.3567251461988304
+fpr=  0.1111111111111111
+tnr=  0.8888888888888888
+
+********** LOO CV **********
+Precision=  0.7420382165605095
+Accuracy=  0.7867564534231201
+AUC=  0.3838383838383838
+tpr=  0.6812865497076024
+fnr=  0.31871345029239767
+fpr=  0.14754098360655737
+tnr=  0.8524590163934426
